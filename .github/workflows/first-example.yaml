@@ -1,0 +1,10 @@
+name: First Example Workflow
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v1.0.0
+      - name: List Files
+        run: ls -la
